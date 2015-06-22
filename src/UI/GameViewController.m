@@ -166,14 +166,14 @@
 }
 
 - (void)increaseScore:(BOOL)score {
-    NSInteger value = 1;
+    NSInteger value = 2;
     
     if (!score) {
-        value = -1;
+        value = -2;
     }
     self.totalScore += value;
     self.firstAppView.totalScoreLabel.text = [NSString stringWithFormat:@"Score %ld", self.totalScore];
-    self.firstAppView.addedPointLabel.text = [NSString stringWithFormat:@"%ld point", value];
+    self.firstAppView.addedPointLabel.text = [NSString stringWithFormat:@"%ld points", value];
 }
 
 @end
